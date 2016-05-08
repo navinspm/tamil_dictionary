@@ -7,6 +7,8 @@ gem 'rails', '4.2.4'
 gem 'bootstrap-sass', '~> 3.3.6'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+# Turbolinks jquery
+gem 'jquery-turbolinks'
 # Use mysql as the database for Active Record
 gem 'mysql2', '~> 0.3.18'
 # Use SCSS for stylesheets
