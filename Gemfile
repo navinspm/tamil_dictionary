@@ -7,6 +7,10 @@ gem 'rails', '4.2.4'
 gem 'bootstrap-sass', '~> 3.3.6'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+# Use jquery rails
+gem 'jquery-ui-rails'
+# autocomplete
+gem 'rails-jquery-autocomplete'
 # Turbolinks jquery
 gem 'jquery-turbolinks'
 # Use mysql as the database for Active Record
