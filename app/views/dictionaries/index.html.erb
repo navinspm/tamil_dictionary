@@ -42,7 +42,7 @@
             <div class="row">
               <% @synonyms.each do |synonym| %>
                 <div class="col-md-3 col-sm-3 col-xs-6">
-                  <a href="" class="btn btn-block btn-default btn-word"><%= synonym %></a>
+                  <%= link_to synonym, "/#{synonym}", :class => 'btn btn-block btn-default btn-word' %>
                 </div>
               <% end %>
             </div>
@@ -59,7 +59,7 @@
             <div class="row">
               <% @antonyms.each do |antonym| %>
                 <div class="col-md-3 col-sm-3 col-xs-6">
-                  <a href="" class="btn btn-block btn-default btn-word"><%= antonym %></a>
+                  <%= link_to antonym, "/#{antonym}", :class => 'btn btn-block btn-default btn-word' %>
                 </div>
               <% end %>
             </div>   
