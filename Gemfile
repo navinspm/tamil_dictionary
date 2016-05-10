@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
+# active admin
+gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
 # Use Bootstrap as front end framework
 gem 'bootstrap-sass', '~> 3.3.6'
 # Use jquery as the JavaScript library
