@@ -72,7 +72,7 @@ footer{
   *border-right-width: 2px;
   *border-bottom-width: 2px;
 }
-.ui-autocomplete .ui-menu-item > a.ui-corner-all {
+.ui-menu-item {
   display: block;
   padding: 3px 15px;
   clear: both;
@@ -80,15 +80,16 @@ footer{
   line-height: 18px;
   color: #555555;
   white-space: nowrap;
-}
-.ui-autocomplete .ui-menu-item > a.ui-corner-all.ui-state-hover, .ui-autocomplete .ui-menu-item > a.ui-corner-all.ui-state-active, .ui-autocomplete .ui-menu-item > a.ui-corner-all.ui-state-focus {
-  color: #ffffff;
-  text-decoration: none;
-  background-color: #0088cc;
-  border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  background-image: none;
+
+  &.ui-state-focus {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0088cc;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-image: none;
+  }
 }
 .ui-helper-hidden-accessible { 
 	display:none; 
