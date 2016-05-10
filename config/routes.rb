@@ -1,4 +1,6 @@
 Rails.application.routes.draw do  
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   match '/:Word' => 'dictionaries#index', via: [:get, :post]
   match '/' => 'dictionaries#index', via: [:get, :post]
   resources :dictionaries do
