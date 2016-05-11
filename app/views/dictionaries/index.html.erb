@@ -109,13 +109,14 @@
       </div>
   </div>    
 <% end %>
+
   <div class="row blank-row">
       <div class="col-md-12">
         <div class="panel panel-default">
           <div class="panel-heading">
             <div class="row">
               <h3 class="text-center text-muted">
-                Word of the Day
+                Synonyms and Antonyms of the Day 
               </h3>
               <hr>
             </div>
@@ -123,29 +124,38 @@
               <div class="col-md-4">
                 <div class="panel panel-default">
                   <div class="panel-body">
-                    <h4 class="text-muted text-center">Synonyms</h4>
-                    <hr>
+                    <% for i in 0..9 %>
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <%= link_to @word_ar[i].Word, "/#{@word_ar[i].Word}", :class => 'btn btn-block btn-default btn-word' %>
+                      </div>
+                    <% end %>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="panel panel-default">
                   <div class="panel-body">
-                    <h4 class="text-muted text-center">Antonyms</h4>
-                    <hr>
+                    <% for i in 10..19 %>
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <%= link_to @word_ar[i].Word, "/#{@word_ar[i].Word}", :class => 'btn btn-block btn-default btn-word' %>
+                      </div>
+                    <% end %>  
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="panel panel-default">
                   <div class="panel-body">
-                    <h4 class="text-muted text-center">Origin And History</h4>
-                    <hr>
+                    <% for i in 20..29 %>
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <%= link_to @word_ar[i].Word, "/#{@word_ar[i].Word}", :class => 'btn btn-block btn-default btn-word' %>
+                      </div>
+                    <% end %>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div>  
   </div>    
