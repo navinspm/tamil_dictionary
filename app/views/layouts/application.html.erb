@@ -17,8 +17,6 @@
 
 	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700" rel="stylesheet" type="text/css">
-
-  	<%= javascript_include_tag 'application' %>
   	
   	<%= csrf_meta_tags %>
 </head>
@@ -49,6 +47,6 @@
 	    </div>
 	  </div>
 	</footer>
-
+	<%= javascript_include_tag 'application' %>
 </body>
 </html>
