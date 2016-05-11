@@ -6,7 +6,7 @@ $(function() {
    			$('#search-form').on("submit",function(){
 	   		 	var word = $('#word').val();
 	   		 	word=word.replace(/\s+/g,'-').toLowerCase();
-	   		  	$(this).attr('action', "http://localhost:3000/"+word);
+	   		  	$(this).attr('action', "http://synonymsdir.com/"+word);
    			});
 
 
