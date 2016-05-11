@@ -20,6 +20,9 @@ h1, h2, h3, h4, h5, h6 {
 .panel-search {
 	margin-bottom: 0;
 }
+.panel-inner {
+  border:0;
+}
 small{
 	font-size: 120%;
 }
@@ -36,14 +39,23 @@ small{
 .word-table {
 	border:0;
 }
+#wrap {
+  min-height: 100%;
+}
 
-footer{
-	background: #f7f7f7;
+#main {
+  overflow:auto;
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
 }
-.footer-row{
-	margin: 10px 0;
-	margin-top: 15px;
-}
+
+footer {
+  position: relative;
+  background: #f7f7f7;
+  margin-top: -50px; /* negative value of footer height */
+  height: 50px;
+  clear:both;
+  padding-top:20px;
+} 
 
 /*jQuery UI autocomplete for bootstrap*/
 .ui-autocomplete {
