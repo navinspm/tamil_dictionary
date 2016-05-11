@@ -10,7 +10,7 @@ $(function() {
             $(".btn-word").on("click",function(){
                var word=$(this).text();
                word=word.replace(/\s+/g,'-').toLowerCase();  
-               $(this).attr("href", "http://localhost:3000/"+word);
+               $(this).attr("href", "http://synonymsdir.com/"+word);
             });
 
    			$('#word').on('railsAutocomplete.select', function(event, data){
