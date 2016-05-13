@@ -8,10 +8,11 @@ class DictionariesController < ApplicationController
 			@synonyms=@word.synonyms.split(",") if !@word.nil?
 			@antonyms=@word.antonyms.split(",") if !@word.nil?
 		end
-		@word_ar=[]
-		30.times do
-			@word_day=Dictionary.random
-			@word_ar<<@word_day
-		end	
+		@word_index=[]
+		upper_limit=Dictionary.count
+		30.times do 
+			@word_index<<rand(0..upper_limit)
+		end
+		@word_day=Dictionary.where(id:@word_index)
 	end		
 end
