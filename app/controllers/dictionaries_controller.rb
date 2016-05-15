@@ -14,5 +14,9 @@ class DictionariesController < ApplicationController
 			@word_index<<rand(0..upper_limit)
 		end
 		@word_day=Dictionary.where(id:@word_index)
-	end		
+	end	
+
+	def sitemap
+		@words = Dictionary.order(:Word).page(params[:page]).per(100)
+	end	
 end
