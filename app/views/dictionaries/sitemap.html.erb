@@ -1,0 +1,48 @@
+<div class="row">
+      <div class="page-header">
+        <h1>SiteMap</h1>
+      </div>
+</div>
+
+<div class="row">
+  <div class="col-md-8">
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2>
+            Pages
+          </h2>
+          <hr>
+          <div class="row">
+        	<ul>
+        		<li>
+        			<a href="/">Home</a>
+        		</li>
+        		<li>
+        			<a href="dictionary/sitemap">SiteMap</a>
+        		</li>
+        	</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2>
+            Table Of Contents
+          </h2>
+          <hr>
+          <div class="row">
+          	<ul>
+          		<% @words.each do |word|%>	
+          			<li><%= link_to word.Word, "/#{word.Word}" %></li>
+          		<% end %>	
+          	</ul>            	 
+          </div>   
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12"><%= paginate @words %></div>
+  </div>
+</div> 

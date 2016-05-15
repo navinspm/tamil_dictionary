@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   match '/:Word' => 'dictionaries#index', via: [:get, :post]
   match '/' => 'dictionaries#index', via: [:get, :post]
-  resources :dictionaries do
+  get '/dictionary/sitemap' => 'dictionaries#sitemap'
+  resources :dictionaries, except: [:new,:edit,:create,:update,:delete] do
     get :autocomplete_dictionary_word, :on => :collection
   end
   root 'dictionaries#index'
