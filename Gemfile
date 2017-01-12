@@ -19,7 +19,7 @@ gem 'jquery-turbolinks'
 #Pagination
 gem 'kaminari'
 # Use mysql as the database for Active Record
-gem 'mysql2', '~> 0.3.18'
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
