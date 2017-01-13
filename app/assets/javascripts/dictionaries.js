@@ -5,12 +5,12 @@ $(function() {
    			$('#search-form').on("submit",function(){
 	   		 	var word = $('#word').val();
 	   		 	word=word.replace(/\s+/g,'-').toLowerCase();
-	   		  	$(this).attr('action', "http://localhost:3000/"+word);
+	   		  	$(this).attr('action', "http://tamildictionary.herokuapp.com/"+word);
    			});
             $(".btn-word").on("click",function(){
                var word=$(this).text();
                word=word.replace(/\s+/g,'-').toLowerCase();  
-               $(this).attr("href", "http://localhost:3000/"+word);
+               $(this).attr("href", "http://tamildictionary.herokuapp.com/"+word);
             });
 
    			$('#word').on('railsAutocomplete.select', function(event, data){
