@@ -4,7 +4,8 @@ class DictionariesController < ApplicationController
 		@word_field=params[:Word]
 		if !@word_field.blank?	
 			@word_field=@word_field.gsub(/-/,' ')
-			@word=Dictionary.find_by_Word(@word_field)
+			t = Dictionary.arel_table
+			@word= Dictionary.where(t[:Word].matches(@word_field)).first
 			@synonyms=@word.synonyms.split(",") if !@word.nil?
 			@antonyms=@word.antonyms.split(",") if !@word.nil?
 		end

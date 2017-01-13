@@ -19,7 +19,7 @@ gem 'jquery-turbolinks'
 #Pagination
 gem 'kaminari'
 # Use mysql as the database for Active Record
-gem 'pg'
+gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -29,6 +29,7 @@ gem 'uglifier', '>= 1.3.0'
 
 group :production do
   gem 'rails_12factor'
+  gem 'pg'
 end
 
 group :development, :test do
@@ -45,5 +46,6 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+
 end
 
